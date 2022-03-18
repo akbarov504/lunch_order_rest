@@ -1,0 +1,21 @@
+server:
+  port: 80
+spring:
+  devtools:
+    livereload:
+      port: 35730
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/lunch_order
+    username: akbarov
+    password: akbarov
+  jpa:
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    open-in-view: false
+    application:
+      name: Lunch order project
+  messages:
+    always-use-message-format: true
